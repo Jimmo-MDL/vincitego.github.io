@@ -275,8 +275,7 @@ function nextSimBlock() {
 						tarot = Math.floor(Math.random() * 9 + 1);
 
 						if (tarot == 1) {
-							/* this tarot doesn't affect starry mushroom?
-							let potentials = [];
+							const potentials = [];
 
 							for (let p = 1; p <= 20; p++) {
 								if (boardState[p] < 5 && (p % 5) != 0) potentials.push([p, Math.random()]);
@@ -293,10 +292,8 @@ function nextSimBlock() {
 
 								boardState[potentials[0][0]]++;
 							}
-							*/
 						} else if (tarot == 2) {
-							/* this tarot doesn't affect starry mushroom?
-							let potentials = [];
+							const potentials = [];
 
 							for (let p = 1; p <= 20; p++) {
 								if (boardState[p] > 3 && (p % 5) != 0) potentials.push([p, Math.random()]);
@@ -313,7 +310,6 @@ function nextSimBlock() {
 
 								boardState[potentials[0][0]]--;
 							}
-							*/
 						} else if (tarot == 3) {
 							moveBackwards = true;
 						} else if (tarot == 5) {
